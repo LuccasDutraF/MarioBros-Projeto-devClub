@@ -133,10 +133,6 @@ video{
     transition: visibility 0.6s ease-in-out;
 }
 
-.formulario-container{
-
-}
-
 .formulario{
     width: 100%;
     display: flex;
@@ -154,6 +150,8 @@ video{
     border-radius: 10px;
     padding: 40px 20px 40px 20px;
     transition: left 0.6s ease-in-out;
+    display: flex;
+    align-items: center;
 }
 
 input{
@@ -185,18 +183,89 @@ textarea{
     cursor: pointer;
     font-weight: bold;
 }
-
+/*Desktop Resolution*/
 @media(max-width: 1024px){
-    .formulario-conte-problema {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 25%;
-    left: -270px;
-    gap: 15px;
-    border-radius: 10px;
-    padding: 20px 15px 20px 15px;
-    transition: left 0.6s ease-in-out;
+     main{
+    padding: 0px 50px 0px 50px;
+    }
+    .esquerda-container{
+    padding-bottom: 60px;
+    }
+    .esquerda{
+    width: 100%;
+    padding-left: 0;
+    }
+    .logo-mario{
+        width: 35%;
+    }
+    .enunciado{
+        width: 76%;
+    }
+    .logo-mario-luigi {
+    width: 145%;
+    }
 }
+/*Laptop Resolution*/
+@media(max-width: 768px){
+    main{
+    padding: 90px 50px 0px 50px;
+    }
+    .esquerda-container{
+    padding-bottom: 60px;
+    }
+    .esquerda{
+    width: 100%;
+    padding-left: 0;
+    }
+    .logo-mario{
+        width: 43%;
+    }
+    .enunciado{
+        width: 100%;
+    }
+    .logo-mario-luigi {
+    width: 145%;
+    }
+}
+
+/*Mobile Resolution*/
+@media(max-width: 376px){
+
+    main{
+        padding: 0px 5px 0px 5px;
+    }
+    .logo-header{
+        width: 50px;
+    }
+    .navegacao{
+        text-align: center;
+    }
+    .navegacao a{
+        font-size: 15px;
+    }
+    .logo-mario{
+        width: 70%;
+    }
+    .enunciado{
+        width: 100%;
+    }
+    .enunciado p{
+        font-size: 15px;
+        line-height: 15px;
+    }
+    .logo-mario-luigi{
+        width: 104%;
+    }
+    .nome{
+    height:30px;
+    width:170px ; 
+    }
+    .numero{
+    height:30px;
+    width:170px ; 
+    }
+    .problema{
+    width:170px;
+    height:80px ;
+    }
 }
