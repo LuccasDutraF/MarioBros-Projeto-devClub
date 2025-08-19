@@ -131,6 +131,7 @@ video{
     top: 0;
     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
     transition: visibility 0.6s ease-in-out;
+    z-index: 8;
 }
 
 .formulario{
@@ -152,6 +153,7 @@ video{
     transition: left 0.6s ease-in-out;
     display: flex;
     align-items: center;
+    z-index: 10;
 }
 
 input{
@@ -186,14 +188,14 @@ textarea{
 /*Desktop Resolution*/
 @media(max-width: 1024px){
      main{
-    padding: 0px 50px 0px 50px;
+        padding: 0px 50px 0px 50px;
     }
     .esquerda-container{
-    padding-bottom: 60px;
+        padding-bottom: 60px;
     }
     .esquerda{
-    width: 100%;
-    padding-left: 0;
+        width: 100%;
+        padding-left: 0;
     }
     .logo-mario{
         width: 35%;
@@ -202,20 +204,20 @@ textarea{
         width: 76%;
     }
     .logo-mario-luigi {
-    width: 145%;
+        width: 145%;
     }
 }
 /*Laptop Resolution*/
 @media(max-width: 768px){
     main{
-    padding: 90px 50px 0px 50px;
+        padding: 90px 50px 0px 50px;
     }
     .esquerda-container{
-    padding-bottom: 60px;
+        padding-bottom: 60px;
     }
     .esquerda{
-    width: 100%;
-    padding-left: 0;
+        width: 100%;
+        padding-left: 0;
     }
     .logo-mario{
         width: 43%;
@@ -224,15 +226,52 @@ textarea{
         width: 100%;
     }
     .logo-mario-luigi {
-    width: 145%;
+        width: 145%;
+    }
+}
+/*Mid Resolution Mobile and Laptop*/
+@media(max-width: 767px){
+    header{
+        text-align: center;
+        gap: 10px;
+    }
+    main{
+        padding: 0px 20px 0px 20px;
+        margin-top: 20px;
+    }
+    .esquerda{
+        z-index: 5;
+    }
+    .esquerda-container{
+        padding-bottom:15px;
+    }
+    .logo-mario {
+    width: 60%;
+    }
+    .enunciado{
+        width: 115%;
+    }
+    p{
+        line-height: 20px;
+        font-size: 15px;
+        text-shadow: 
+                1px 1px 1px black,
+                -1px -1px 1px black,
+                1px -1px 1px black,
+                -1px 1px 1px black;
+    }
+    .logo-mario-luigi {
+        width: 207px;
     }
 }
 
 /*Mobile Resolution*/
 @media(max-width: 376px){
-
+    header{
+        text-align: center;
+    }
     main{
-        padding: 0px 5px 0px 5px;
+        padding: 0px 10px 0px 10px;
     }
     .logo-header{
         width: 50px;
@@ -247,25 +286,25 @@ textarea{
         width: 70%;
     }
     .enunciado{
-        width: 100%;
+        width: 110%;
     }
     .enunciado p{
         font-size: 15px;
         line-height: 15px;
     }
     .logo-mario-luigi{
-        width: 104%;
+        width: 200px;
     }
     .nome{
-    height:30px;
-    width:170px ; 
+        height:30px;
+        width:170px ; 
     }
     .numero{
-    height:30px;
-    width:170px ; 
+        height:30px;
+        width:170px ; 
     }
     .problema{
-    width:170px;
-    height:80px ;
+        width:170px;
+        height:80px ;
     }
 }

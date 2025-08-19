@@ -19,22 +19,22 @@ function removerformulario(){
       else if (window.innerWidth > 768) 
       {
       mascara.style.visibility = "hidden"
-      movimentoformulario.style.left = "-270px"
+      movimentoformulario.style.left = "-280px"
       movimentoformulario.style.top = "32%"
       movimentoformulario.style.transform = "translateX(0)"
       } 
       else if (window.innerWidth >= 375) 
       {
       mascara.style.visibility = "hidden"
-      movimentoformulario.style.left = "-270px"
-      movimentoformulario.style.top = "32%"
+      movimentoformulario.style.left = "-285px"
+      movimentoformulario.style.top = "26%"
       movimentoformulario.style.transform = "translateX(0)"
       }
       else if(window.innerWidth > 0) 
       {
       mascara.style.visibility = "hidden"
-      movimentoformulario.style.left = "-190px"
-      movimentoformulario.style.top = "32%"
+      movimentoformulario.style.left = "-203px"
+      movimentoformulario.style.top = "25%"
       movimentoformulario.style.transform = "translateX(0)"
       }
 }
