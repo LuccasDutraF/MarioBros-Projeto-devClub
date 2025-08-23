@@ -13,6 +13,7 @@ header{
     align-items: center;
     gap: 50px;
     padding: 20px;
+    animation: fadeTop 1s forwards;
 }
 
 .logo-header{
@@ -48,6 +49,7 @@ main{
 .esquerda{
     width: 50%;
     padding-left: 6%;
+    animation: fadeLeft 1s forwards;
 }
 
 .esquerda-container{
@@ -89,6 +91,7 @@ p{
     width: 50%;
     display: flex;
     justify-content: center;
+    animation: faderight 1s forwards;
 }
 
 .logo-mario-luigi{
@@ -187,6 +190,40 @@ textarea{
     font-weight: bold;
     color: black;
 }
+
+@keyframes fadeTop{
+    from{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+@keyframes fadeLeft{
+    from{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}
+
+@keyframes faderight{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}
+
 /*Desktop Resolution*/
 @media(max-width: 1024px){
      main{
